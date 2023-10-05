@@ -18,7 +18,8 @@ const Navbar = () => {
         />
 
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-          Dev <span className="text-primary-500">Overflow</span>
+          DevSquare<sup>2</sup>
+          <span className="text-primary-500">AI</span>
         </p>
       </Link>
 
