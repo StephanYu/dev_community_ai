@@ -30,8 +30,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     handleThemeChange();
   }, [theme]);
 
-  // console.log("theme, ", theme);
-
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
