@@ -1,4 +1,4 @@
-import { getTopTags } from "@/lib/actions/tag.actions";
+import { getTopTags } from "@/lib/actions/tag.action";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
