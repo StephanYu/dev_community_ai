@@ -3,8 +3,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 import React from "react";
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import "./globals.css";
+import "../styles/prism.css";
 
 export const metadata: Metadata = {
   title: "Dev Community AI",
