@@ -42,7 +42,16 @@ const Question = async ({ params, searchParams }: any) => {
             </p>
           </Link>
           <div className="flex justify-end">
-            <Votes />
+            <Votes
+              type="Question"
+              itemId={JSON.stringify(question._id)}
+              userId={JSON.stringify(user._id)}
+              upvotes={question.upvotes.length}
+              hasupVoted={question.upvotes.includes(user._id)}
+              downvotes={question.downvotes.length}
+              hasdownVoted={question.downvotes.includes(user._id)}
+              hasSaved={user?.saved.includes(question._id)}
+            />
           </div>
         </div>
         <h2 className="h2-semibold text-dark200_light900 mt-3.5 w-full text-left">
